@@ -2,7 +2,7 @@ import axios from 'axios';
 import { CardArticle } from '../components/organism/Home/Article/Article';
 import { FiChevronRight } from 'react-icons/fi';
 import FormatDate from '../utils/formatDate';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout/layout';
 import { MobileOverflowText } from '../utils/overflowText';
 import Skeleton from 'react-loading-skeleton';
 import { useRouter } from 'next/router';
