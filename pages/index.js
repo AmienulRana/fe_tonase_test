@@ -7,10 +7,11 @@ import Pagination from '../components/element/Pagination';
 import { useState, useEffect } from 'react';
 
 export default function Home({data}) {
-  const [currentItems, setCurrentItems] = useState(null);
   const [articles, setArticles] = useState([]);
+  const [currentItems, setCurrentItems] = useState(null);
   const [loading, setLoading] = useState(true);
   const [searchedArticle, setSearchedArticle] = useState(false);
+
   useEffect(() => {
     const newKeyArt = data.map(article => {
       return {...article, id: Math.ceil(Math.random()*10000000000)}
@@ -62,7 +63,7 @@ export async function getServerSideProps(context) {
   const response = await axios.get(url);
   if(response && response.data.status === 'ok'){
     return {
-      props: { data: response.data.articles } // will be passed to the page component as props
+      props: { data: response.data.articles }
     }
   }
 }
