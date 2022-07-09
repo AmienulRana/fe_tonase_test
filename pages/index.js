@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BiSearch } from 'react-icons/bi';
 import Layout from '../components/Layout/layout';
 import LoadingArticle from '../components/organism/Home/Article/LoadingArticle';
-import Pagination from '../components/element/Pagination/Pagination';
+import Pagination from '../components/element/Pagination';
 import { useState, useEffect } from 'react';
 
 export default function Home({data}) {

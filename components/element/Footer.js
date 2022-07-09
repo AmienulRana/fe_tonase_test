@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo";
+import Logo from "./Logo";
 import { FaFacebookSquare, FaYoutubeSquare } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 export default function Footer()  {
