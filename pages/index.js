@@ -59,7 +59,7 @@ export default function Home({data}) {
 }
 
 export async function getServerSideProps(context) {
-  const url = 'https://newsapi.org/v2/everything?q=Apple&from=2022-07-07&apiKey=14bc3bf9f9e545ecb72c4529da1ee761';
+  const url = 'https://newsapi.org/v2/everything?q=Apple&apiKey=14bc3bf9f9e545ecb72c4529da1ee761';
   const response = await axios.get(url);
   if(response && response.data.status === 'ok'){
     return {
